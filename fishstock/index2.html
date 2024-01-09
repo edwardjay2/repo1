@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- box icon link -->
+    <link rel="stylesheet" href="../assets/boxicons-2.1.4/css/boxicons.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/styles2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/fishstock logo.svg" style="width:7em;">
+        </div>
+        <nav class="navigation key first" >
+           <ul> 
+            <li><a href="">Home</a></li>
+            <li><a href="">Buy</a></li>
+            <li><a href="">Recipes</a></li>
+        
+           </ul>
+
+           <div class="side-nav">
+                <li><a href="">LogIn</a></li>
+                <i class="bx bx-cart"></i>
+           </div>
+        </nav>
+        <i class="bx bx-menu"></i>
+    </header>
+    <section class="hero-section">
+        <div class="container " >
+            <div class="foodclass">
+                <img src="../img/IMG-20230704-WA0005~3 1.png"  alt="" class="food"> 
+            </div>
+            <div class="texts">
+                <h2 class="header">Ocean to Table</h2>
+                <h1 class="sub-header">
+                    Chilean Seabass Delivery 
+                    <span> directly to your door</span></h1>
+                <p class="subtext">Premium products is derived directly from the source and shipped within 2 days along - 
+                    delivered with chef designed recipes </p>
+                    <div class="btn">
+                        <button class="btn1"> ORDER NOW</button>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="packages">
+        <div class="container2">
+            <h1 class="heading">
+                whats in the box
+           </h1>
+            <div class="row">
+                <div class="col">
+                    <img  src="../img/fish.png" alt="" class="icon-1">
+                    <p class="col-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum et ipsum numquam minus, a eos adipisci nulla ex possimus quo veritatis quos atque voluptates quas eius obcaecati ad, nesciunt suscipit?
+                    </p>
+                </div>
+                <div class="col">
+                    <img style="width:45%; " src="../img/box icon.png" alt="" class="icon-2">
+                    <p class="col-body box-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum et ipsum numquam minus, a eos adipisci nulla ex possimus quo veritatis quos atque voluptates quas eius obcaecati ad, nesciunt suscipit?
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="../img/bookicon.png" alt="" class="icon-3">
+                    <p class="col-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum et ipsum numquam minus, a eos adipisci nulla ex possimus quo veritatis quos atque voluptates quas eius obcaecati ad, nesciunt suscipit?
+                      
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps">
+        <div class="container3">
+            <div class="row3">
+                <div class="col1">
+                    <div class="col1-body">
+                        <h1>Ocean</h1>
+                        <p class="paragraph-1">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing el consectetur adipisicing el  adipisicing el
+                            consectetur  amet
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img style="width:35%; height:20vh;" src="../img/fish&waves.png" alt="">
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="img2">
+                        <img style="width:45%; height:15vh;" src="../img/carsvg2.png" alt="">
+                    </div>
+                    <div class="col2-body">
+                        <h1>Truck</h1>
+                        <p class="paragraph-2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing el consectetur adipisicing el  adipisicing el
+                            consectetur  amet
+                        </p>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="col3-body">
+                        <h1>Door</h1>
+                        <p class="paragraph-3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing el consectetur adipisicing el  adipisicing el
+                            consectetur  amet
+                        </p>
+                    </div>
+                    <div class="img3">
+                        <img style="width:25%; height:15vh;" src="../img/boxicon.png" alt="">
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    <script>
+        //get the menu icon 
+        const menu= document.querySelector('.bx-menu')
+        const nav =  document.querySelector('.navigation')
+        const container = document.querySelector('.container')
+
+        const remover=()=>{
+            nav.classList.remove('navigation')
+        }
+        remover()
+
+        menu.addEventListener('click',function(){
+            if(nav.classList.contains('navigation')){
+            nav.classList.remove('navigation')
+           }else{
+            nav.classList.add('navigation');
+
+           } 
+        })
+
+        menu.addEventListener('click',function(){
+            
+            if(nav.classList.contains('navigation')){
+                container.style.marginTop="18vh"
+            }else{
+                container.style.marginTop='0'
+            }
+        }
+        )
+       
+                
+        
+           
+      
+        //attach a click event to it
+        //set remove the class with which we hid class containing the nav
+    </script>
+    
+</body>
+</html>
